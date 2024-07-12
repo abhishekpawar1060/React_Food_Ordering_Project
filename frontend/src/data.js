@@ -8,7 +8,7 @@ export const sample_foods = [
         origins: ['italy'],
         stars: 4.5,
         imageUrl: 'food-8.jpg',
-        tages: ['FastFood', 'Pizza', 'Lunch'],
+        tags: ['FastFood', 'Pizza', 'Lunch'],
     },
     {
         id: '2',
@@ -19,7 +19,7 @@ export const sample_foods = [
         origins: ['persia', 'middle east', 'chine'],
         stars: 5,
         imageUrl: "food-2.jpg",
-        tages: ['SlowFood', 'Lunch'],
+        tags: ['SlowFood', 'Lunch'],
     },
     {
         id: '3',
@@ -30,7 +30,7 @@ export const sample_foods = [
         origins: ['germany', 'us'],
         stars: 4.0,
         imageUrl: 'food-3.jpg',
-        tages: ['FastFood', 'Hamburger'],
+        tags: ['FastFood', 'Hamburger'],
     },
     {
         id: '4',
@@ -41,7 +41,7 @@ export const sample_foods = [
         origins: ['belgium', 'france'],
         stars: 3.5,
         imageUrl: 'food-4.jpg',
-        tages: ['FastFood', 'Fry'],
+        tags: ['FastFood', 'Fry'],
     },
     {
         id: '5',
@@ -52,7 +52,7 @@ export const sample_foods = [
         origins: ['italy'],
         stars: 4.5,
         imageUrl: 'food-5.jpg',
-        tages: ['SlowFood', 'Soup'],
+        tags: ['SlowFood', 'Soup'],
     },
     {
         id: '6',
@@ -63,6 +63,18 @@ export const sample_foods = [
         origins: ['italy'],
         stars: 4.5,
         imageUrl: 'food-9.jpg',
-        tages: ['FastFood', 'Pizza', 'Lunch'],
+        tags: ['FastFood', 'Pizza', 'Lunch'],
     },
 ]
+
+
+export const sample_tags = [
+    {name: "All", count: 6 },
+    {name: "FastFood", count: 4 },
+    {name: "Pizza", count: 2 },
+    {name: "Lunch", count: 3 },
+    {name: "SlowFood", count: 2 },
+    {name: "Hamburger", count: 1 },
+    {name: "Fry", count: 1 },
+    {name: "Soup", count: 1 },  
+];
