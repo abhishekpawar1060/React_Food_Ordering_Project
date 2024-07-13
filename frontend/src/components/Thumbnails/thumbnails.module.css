@@ -32,6 +32,7 @@
 }
 
 .favorite{
+    color: #e72929;
     position: absolute;
     top: 0.5rem;
     right: 1rem;
