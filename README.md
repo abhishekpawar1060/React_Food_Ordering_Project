@@ -20,3 +20,31 @@ Step 1 : Create frontend project by using command : npx create-react-app fronted
 8. Add axios package (axiosConfig.js file) For the connection of frontend with backend
 9. install axios at frontend folder
 9. Connect food service to the Apis
+
+
+## Login Page Design
+# Backend
+1. Create User Router
+    1. npm install jsonwebtoken
+    2. add login api
+        1. Add sample_users to data.js
+        2. add httStatus.js
+    3. Add generateTokenResponse function
+2. Add uset Router to Server.js
+
+# Frontend
+1. Create user Service
+    1. Add getUser function
+    2. Add login function
+    3. Add logout function
+2. npm install react-toastify
+3. create userAuth hook
+    1. Add user state
+    2. add login function
+    3. add logout funnction
+4. Create loginPage component(npm install react-hook-form)
+    1. Add to AppRouter.js
+    2. Create Custom Components
+        Input Cotainer (Add CSS)s
+
+5. Add useAuth to the Header Component
