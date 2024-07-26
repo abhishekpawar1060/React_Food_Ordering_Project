@@ -20,7 +20,7 @@ function CartPage() {
                         {cart.items.map(item => (
                                 <li key={item.food.id}>
                                 <div>
-                                    <img src={`/img/${item.food.imageUrl}`}
+                                    <img src={`${item.food.imageUrl}`}
                                         alt={item.food.name}
                                     />
                                 </div>

@@ -48,3 +48,35 @@ Step 1 : Create frontend project by using command : npx create-react-app fronted
         Input Cotainer (Add CSS)s
 
 5. Add useAuth to the Header Component
+
+
+
+## MongoDB
+1. Install MongoDB 
+2. Install mongoose
+    1. add user model
+    2. add food model
+3. Add .env file
+    install dotenv
+    1. Add MONGO_URI_LOCAL
+    2. add to .gitIgnore
+4. Add database.config.js
+    1. connect to mongodb
+    2. Seed users
+        install bcryptjs for password hasing
+    3. Seed Food
+
+5. Update user.router (Using UserModel)
+    install express-async-handler
+    Login API
+    generateTokenResponse
+6. Update food.router (Using FoodModel)
+    Root API (Loading all foods)
+    Tags api
+    search api
+    foodId api (Finding food by id)
+
+7. Fix Image url in:
+    Thubnails component
+    Food Page Component
+    Cart Page Component
