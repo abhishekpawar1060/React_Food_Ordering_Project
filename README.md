@@ -80,3 +80,13 @@ Step 1 : Create frontend project by using command : npx create-react-app fronted
     Thubnails component
     Food Page Component
     Cart Page Component
+
+## Register Page Desgin
+1. Add Register Page Component
+    Add to APProutes
+    Add Link to login Page
+    CSS
+2. Add/Register api to user.router.js
+3. Add register function in UserService
+4. Add register function in useAuth hook
+    add to register page

@@ -7,16 +7,16 @@
 }
 
 .details{
-    width: 28rem;
+    width: 25rem;
 }
 
 .details form{
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
 }
 
-.register{
+.login{
     display: flex;
     justify-content: center;
     align-items: center;
