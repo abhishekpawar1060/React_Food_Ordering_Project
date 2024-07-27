@@ -22,8 +22,8 @@ Step 1 : Create frontend project by using command : npx create-react-app fronted
 9. Connect food service to the Apis
 
 
-## Login Page Design
-# Backend
+# Login Page Design
+## Backend
 1. Create User Router
     1. npm install jsonwebtoken
     2. add login api
@@ -32,7 +32,7 @@ Step 1 : Create frontend project by using command : npx create-react-app fronted
     3. Add generateTokenResponse function
 2. Add uset Router to Server.js
 
-# Frontend
+## Frontend
 1. Create user Service
     1. Add getUser function
     2. Add login function
