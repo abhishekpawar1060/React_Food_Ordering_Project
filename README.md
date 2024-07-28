@@ -81,7 +81,7 @@ Step 1 : Create frontend project by using command : npx create-react-app fronted
     Food Page Component
     Cart Page Component
 
-## Register Page Desgin
+# Register Page Desgin
 1. Add Register Page Component
     Add to APProutes
     Add Link to login Page
@@ -90,3 +90,13 @@ Step 1 : Create frontend project by using command : npx create-react-app fronted
 3. Add register function in UserService
 4. Add register function in useAuth hook
     add to register page
+
+
+# Design Loading Component
+1. Create useLoading hook
+    Add LoadinProvider to index.js
+2. Create Loading Component
+    Add to app.js
+    add image
+    css
+3. create Loading interceptor
