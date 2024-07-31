@@ -112,4 +112,27 @@ Step 1 : Create frontend project by using command : npx create-react-app fronted
         2. Adding Images to public folder
         3. Fixing header menu problem with map
 2. Create Order router  
-    1. 
+    1. Create auth middleware
+        1. Add UNAUTHORIZED http status
+        2. Add to Order router
+    2. Create Order model
+        1. Create Order Status
+    3. Add to server.js
+3. Connenctin Frontend to Backend
+    1. Create order service
+        1. Add create function
+    2. Create Auth Interceptor
+        1. add to index.js
+
+# Payment Page
+1. Create PaymentPage Component
+    1. Add to route
+    2. css
+2. Upadate order route
+    1. add newOrderForCurrentUser
+    2 add pay api
+3. Create PaypalButtons Component
+    1. npm install @paypal/react-paypal-js
+    2. add cleatCart to useCart
+    3. Get clientId
+    4. Create SandBox user for testing
