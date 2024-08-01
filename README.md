@@ -136,3 +136,10 @@ Step 1 : Create frontend project by using command : npx create-react-app fronted
     2. add cleatCart to useCart
     3. Get clientId
     4. Create SandBox user for testing
+
+# Order Track Page
+1. Create Order track page
+    1. Add to route
+    2. css
+    3. Create DataTime Component
+    

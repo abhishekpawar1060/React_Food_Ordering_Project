@@ -45,7 +45,7 @@ export default function PaypalButtons({ order }) {
                     const orderId = await pay(paymentId);
                     clearCart();
                     toast.success("Payment Saved Successfully","Success");
-                    navigate('/track' + orderId);
+                    navigate('/track/' + orderId);
                 } catch (error) {
                     toast.error('Payment Save Failes', "Error");
                 }
