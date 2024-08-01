@@ -143,3 +143,9 @@ Step 1 : Create frontend project by using command : npx create-react-app fronted
     2. css
     3. Create DataTime Component
     
+# Desing Profile Page
+1. Create ProfilePage Component
+    1. CSS
+    2. Update Profile
+    3. ChangePassword component
+2. Update useAuth hook
