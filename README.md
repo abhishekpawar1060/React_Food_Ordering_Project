@@ -149,3 +149,10 @@ Step 1 : Create frontend project by using command : npx create-react-app fronted
     2. Update Profile
     3. ChangePassword component
 2. Update useAuth hook
+
+# Desing Order Page
+1. Create Order Page
+    1. Add to route
+    2. CSS
+2. Update Order Service
+    1. Add getAll function
