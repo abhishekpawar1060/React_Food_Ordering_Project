@@ -1,0 +1,14 @@
+{
+  "name": "react_food_ordering_project",
+  "version": "1.0.0",
+  "description": "Build a React Full Stack Project by Using React js, Node js, express js, MongoDB.",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd backend && npm start",
+    "build": "cd frontend && npm run build",
+    "postbuild": "mv -f frontend/build backend/src/public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
