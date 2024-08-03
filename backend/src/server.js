@@ -8,7 +8,6 @@ import foodRouter from './routers/food.router.js'
 import userRouter from './routers/user.router.js'
 import { dbconnect } from './config/database.config.js';
 import orderRouter from './routers/order.router.js';
-import path from 'path';
 import { dirname } from 'path';
 
 dbconnect();
@@ -41,8 +40,8 @@ app.get('*', (req, res) => {
 });
 
 
-const PORT = 1000 || 5000;
-app.listen(PORT, () => {
-    console.log('listening on port ' +PORT);
+const port = process.env.PORT || 5000;
+app.listen(port, () => {
+    console.log('listening on port ' +port);
 })
 
