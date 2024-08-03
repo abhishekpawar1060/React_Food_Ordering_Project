@@ -8,6 +8,7 @@ import foodRouter from './routers/food.router.js'
 import userRouter from './routers/user.router.js'
 import { dbconnect } from './config/database.config.js';
 import orderRouter from './routers/order.router.js';
+import path from 'path';
 import { dirname } from 'path';
 
 dbconnect();
