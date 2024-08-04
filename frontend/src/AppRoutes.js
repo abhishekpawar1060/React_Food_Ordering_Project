@@ -11,6 +11,7 @@ import PaymentPage from './pages/Payment/PaymentPage'
 import OrderTrack from './pages/OrderTrack/OrderTrack'
 import ProfilePage from './pages/Profile/ProfilePage'
 import OrdersPage from './pages/Orders/OrdersPage'
+import DashboardPage from './pages/Dashboard/DashboardPage'
 
 
 function AppRoutes() {
@@ -28,6 +29,7 @@ function AppRoutes() {
         <Route path='/track/:orderId' element = {<AuthRoute><OrderTrack/></AuthRoute>}/>
         <Route path='/profile' element = {<AuthRoute><ProfilePage/></AuthRoute>}/>
         <Route path='/orders/:filter?' element = {<AuthRoute><OrdersPage/></AuthRoute>}/>
+        <Route path='/dashboard' element = {<AuthRoute><DashboardPage/></AuthRoute>}/>
     </Routes>
   )
 }

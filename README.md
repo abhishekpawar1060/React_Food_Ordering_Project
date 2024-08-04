@@ -156,3 +156,9 @@ Step 1 : Create frontend project by using command : npx create-react-app fronted
     2. CSS
 2. Update Order Service
     1. Add getAll function
+
+# Design admin Dashboard
+1. Adding Icons
+2. Create Dashboard Component
+    1. add to route
+3. Update link in the header
