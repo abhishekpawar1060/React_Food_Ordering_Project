@@ -1,5 +1,7 @@
 Build a React Full Stack Project by Using React js, Node js, express js, MongoDB.
 
+# Deploy On the Render.com (Link is below)
+https://food-ordering-project-su4s.onrender.com
 
 
 Step 1 : Create frontend project by using command : npx create-react-app fronted
@@ -162,3 +164,10 @@ Step 1 : Create frontend project by using command : npx create-react-app fronted
 2. Create Dashboard Component
     1. add to route
 3. Update link in the header
+
+# Food Admin Page
+1. Create Foods Admin Page
+    1. Add it to AppRoute.js
+        1. Create Admin Route
+2. Add Search
+3. Delete Food

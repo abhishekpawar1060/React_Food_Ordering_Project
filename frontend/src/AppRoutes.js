@@ -12,6 +12,8 @@ import OrderTrack from './pages/OrderTrack/OrderTrack'
 import ProfilePage from './pages/Profile/ProfilePage'
 import OrdersPage from './pages/Orders/OrdersPage'
 import DashboardPage from './pages/Dashboard/DashboardPage'
+import AdminRoute from './components/AdminRoute/AdminRoute'
+import FoodsAdminPage from './pages/FoodsAdmin/FoodsAdminPage'
 
 
 function AppRoutes() {
@@ -30,6 +32,7 @@ function AppRoutes() {
         <Route path='/profile' element = {<AuthRoute><ProfilePage/></AuthRoute>}/>
         <Route path='/orders/:filter?' element = {<AuthRoute><OrdersPage/></AuthRoute>}/>
         <Route path='/dashboard' element = {<AuthRoute><DashboardPage/></AuthRoute>}/>
+        <Route path='/admin/foods/:searchTerm?' element = {<AdminRoute><FoodsAdminPage/></AdminRoute>}/>
     </Routes>
   )
 }

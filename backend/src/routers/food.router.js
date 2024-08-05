@@ -2,6 +2,7 @@ import { Router } from "express";
 import { UserModel } from "../model/user.model.js";
 import handler from 'express-async-handler'
 import { FoodModel } from "../model/food.model.js";
+import admin from "../middleware/admin.mid.js";
 
 
 const router = Router();
@@ -10,6 +11,16 @@ router.get('/', handler(async (req, res) => {
     const foods = await FoodModel.find({})
     res.send(foods);
 }))
+
+router.delete(
+    '/:foodId',
+    admin,
+    handler(async (req, res) => {
+        const { foodId } = req.params;
+        await FoodModel.deleteOne({ _id: foodId });
+        res.send();
+    })
+);
 
 router.get('/tags', handler(async (req, res) => {
     const tags = await FoodModel.aggregate([
