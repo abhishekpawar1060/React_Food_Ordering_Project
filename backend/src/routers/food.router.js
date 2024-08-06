@@ -12,6 +12,47 @@ router.get('/', handler(async (req, res) => {
     res.send(foods);
 }))
 
+
+router.post(
+    '/', 
+    admin,
+    handler(async (req, res) => {
+        const { name, price, tags, favorite, imageUrl, origins, cookTime } = req.body;
+        const food = new FoodModel({
+            name,
+            price,
+            tags: tags.split ? tags.split(',') : tags,
+            favorite,
+            imageUrl, 
+            origins: origins.split ? origins.split(',') : origins,
+            cookTime,
+        });
+
+        await food.save();
+        res.send(food);
+
+    })
+);
+
+
+router.put(
+    '/', 
+    admin,
+    handler(async (req, res) => {
+        const {id, name, price, tags, favorite, imageUrl, origins, cookTime } = req.body;
+        await FoodModel.updateOne({ _id: id}, {
+            name,
+            price,
+            tags: tags.split ? tags.split(',') : tags,
+            favorite,
+            imageUrl, 
+            origins: origins.split ? origins.split(',') : origins,
+            cookTime,
+        });
+        res.send();
+    })
+);
+
 router.delete(
     '/:foodId',
     admin,

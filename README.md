@@ -171,3 +171,18 @@ Step 1 : Create frontend project by using command : npx create-react-app fronted
         1. Create Admin Route
 2. Add Search
 3. Delete Food
+
+# Add and Edit Foods
+1. Create FoodEditPage Component
+    1. add form
+2. Image
+    1. Create uploadService
+        1. uploadImage
+    2. Create upload.router
+        1. Add to server.js
+        2. npm install multer
+        3. npm install cloudinary
+        4. create cloudinary.config.js
+        5. Progress bar instead of Loading for upload
+    3. Update Food Service
+        1. add function
