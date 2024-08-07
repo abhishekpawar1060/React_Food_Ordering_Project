@@ -186,3 +186,14 @@ Step 1 : Create frontend project by using command : npx create-react-app fronted
         5. Progress bar instead of Loading for upload
     3. Update Food Service
         1. add function
+
+# Manage Users
+1. Create UserPage component
+    1. Add to route
+2. Add funtions to userService
+    1. getAll
+    2. toggleBlock
+3. Add apis to user.router
+    1. getAll
+    2. toggleBlock
+4. Add isBlocked property to user.model
