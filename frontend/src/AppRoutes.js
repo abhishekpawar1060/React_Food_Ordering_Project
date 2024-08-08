@@ -16,6 +16,7 @@ import AdminRoute from './components/AdminRoute/AdminRoute'
 import FoodsAdminPage from './pages/FoodsAdmin/FoodsAdminPage'
 import FoodEditPage from './pages/FoodEdit/FoodEditPage'
 import UsersPage from './pages/UsersPage/UsersPage'
+import UserEditPage from './pages/UserEdit/UserEditPage'
 
 
 function AppRoutes() {
@@ -38,6 +39,7 @@ function AppRoutes() {
         <Route path='/admin/addFood' element = {<AdminRoute><FoodEditPage/></AdminRoute>}/>
         <Route path='/admin/editFood/:foodId' element = {<AdminRoute><FoodEditPage/></AdminRoute>}/>
         <Route path='/admin/users/:searchTerm?' element = {<AdminRoute><UsersPage/></AdminRoute>}/>
+        <Route path='/admin/editUser/:userId?' element = {<AdminRoute><UserEditPage/></AdminRoute>}/>
     </Routes>
   )
 }

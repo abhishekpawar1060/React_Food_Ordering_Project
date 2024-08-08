@@ -4,6 +4,7 @@ import { getAll, toggleBlock } from '../../services/userService';
 import classes from './usersPage.module.css';
 import Title from '../../components/Title/Title';
 import { useAuth } from '../../hooks/useAuth';
+import Search from '../../components/Search/Search';
 
 
 function UsersPage() {
@@ -32,6 +33,12 @@ function UsersPage() {
         <div className={classes.container}>
             <div className={classes.list}>
                 <Title title="Manage Users" />
+                <Search 
+                    searchRoute="/admin/users/"
+                    defaultRoute="/admin/users"
+                    margin="1rem 0"
+                    placeholder="Search Users"
+                />
                 <div className={classes.list_item}>
                     <h3>Name</h3>
                     <h3>Email</h3>
@@ -48,7 +55,7 @@ function UsersPage() {
                                 <span>{user.address}</span>
                                 <span>{user.isAdmin ? '✅' : '❌'}</span>
                                 <span className={classes.actions}>
-                                    <Link to={'/admin/editUser' + user.id} >Edit</Link>
+                                    <Link to={'/admin/editUser/' + user.id} >Edit</Link>
                                     {   
                                         auth.user.id !== user.id && (
                                             <Link onClick={() => handleToggleBlock(user.id)}>

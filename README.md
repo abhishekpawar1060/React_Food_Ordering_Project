@@ -197,3 +197,14 @@ Step 1 : Create frontend project by using command : npx create-react-app fronted
     1. getAll
     2. toggleBlock
 4. Add isBlocked property to user.model
+
+
+# Add/Edit User
+1. Create UserEditPage
+    1. Add to route
+2. Add to userService
+    1. getById
+    2. updateUser
+3. Add to user.router
+    1. getById
+    2. updateUser
